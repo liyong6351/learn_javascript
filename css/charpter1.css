@@ -1,0 +1,20 @@
+body {
+    background: #cccccc;
+}
+
+p {
+    color: red;
+    background: #888888;
+}
+
+p.test {
+    color: green
+}
+
+#idTest {
+    color: deeppink
+}
+
+h2.test {
+    color: deepskyblue;
+}
