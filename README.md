@@ -69,3 +69,13 @@ Tree可以表示为Element的形式，每个Element包括文本节点和属性�
  元素节点的nodeType属性为1
  属性节点的nodeType属性为2
  文本节点的nodeType属性为3
+
+
+第三章:JS编程原则和良好习惯
+    1、预留后路:确保网页在没有Js的情况下也能正常工作
+        杜绝"javascript:"这样的伪协议
+    2、分离JS:将网页结构和内容与JS脚本行为分开
+        将JS文件和HTML文件相互分离
+        将HTML中的obclick等方法使用JS进行绑定
+    3、向后兼容:兼容老版本
+        浏览器嗅探技术:

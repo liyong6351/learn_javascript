@@ -1,8 +1,45 @@
 function showPic(whichpic) {
-    var title = whichpic.getAttribute('title');
+    if (!document.getElementById('placeholder')) return true;
     var source = whichpic.getAttribute('href');
     var placeholder = document.getElementById('placeholder');
-    var description = document.getElementById('description');
     placeholder.setAttribute('src', source);
-    description.firstChild.nodeValue = title;
+
+    if (!document.getElementById('description')) return false;
+    var text = whichpic.getAttribute('title');
+    var description = document.getElementById('description');
+    description.firstChild.nodeValue = text;
+
+    return false;
 }
+
+function prepareGallery() {
+    if (document.getElementsByTagName) {
+        if (document.getElementById) {
+            if (document.getElementById('imagegallery')) {
+                var gallery = document.getElementById('imagegallery');
+                var links = gallery.getElementsByTagName('a');
+                if (links && links.length > 0) {
+                    for (var i = 0; i < links.length; i++) {
+                        links[i].onclick = function() {
+                            return showPic(this);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
+
+addLoadEvent(prepareGallery);
