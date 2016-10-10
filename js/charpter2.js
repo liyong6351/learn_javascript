@@ -1,11 +1,17 @@
 function showPic(whichpic) {
     if (!document.getElementById('placeholder')) return true;
-    var source = whichpic.getAttribute('href');
+    var source = '';
+    if (whichpic.getAttribute('href')) {
+        source = whichpic.getAttribute('href');
+    }
     var placeholder = document.getElementById('placeholder');
     placeholder.setAttribute('src', source);
 
     if (!document.getElementById('description')) return false;
-    var text = whichpic.getAttribute('title');
+    var text = '';
+    if (whichpic.getAttribute('title')) {
+        text = whichpic.getAttribute('title');
+    }
     var description = document.getElementById('description');
     description.firstChild.nodeValue = text;
 
