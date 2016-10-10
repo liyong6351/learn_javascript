@@ -12,19 +12,30 @@
     <h1>Snapshots</h1>
     <ul>
         <li>
-            <a href="../images/1.jpg" title="1">Display 1</a>
+            <a href="../images/1.jpg" onclick="showPic(this);return false;" title="first pic">Display 1</a>
         </li>
         <li>
-            <a href="../images/2.jpg" title="2">Display 2</a>
+            <a href="../images/2.jpg" onclick="showPic(this);return false;" title="second pic">Display 2</a>
         </li>
         <li>
-            <a href="../images/3.jpg" title="3">Display 3</a>
+            <a href="../images/3.jpg" onclick="showPic(this);return false;" title="third pic">Display 3</a>
         </li>
         <li>
-            <a href="../images/4.jpg" title="4">Display 4</a>
+            <a href="../images/4.jpg" onclick="showPic(this);return false;" title="forth pic">Display 4</a>
+        </li>
+        <li>
+            <a href="../images/zhang1.jpg" onclick="showPic(this);return false;" title="zhang first pic">Display 5</a>
+        </li>
+        <li>
+            <a href="../images/zhang2.jpg" onclick="showPic(this);return false;" title="zhang second pic">Display 6</a>
+        </li>
+        <li>
+            <a href="../images/zhang3.jpg" onclick="showPic(this);return false;" title="zhang third pic">Display 7</a>
         </li>
     </ul>
-    <script type='text/javascript' src='../js/charpter4.js'></script>
+    <p id="description">Choose an image.</p>
+    <img id="placeholder" src="../images/zhang1.jpg" alt="my imae gallery" style="width:500px;width:300px" />
+    <script type='text/javascript' src='../js/charpter2.js'></script>
 </body>
 
 </html>

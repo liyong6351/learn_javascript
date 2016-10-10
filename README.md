@@ -64,3 +64,8 @@ Tree可以表示为Element的形式，每个Element包括文本节点和属性�
 
 4、CSS：层叠样式表
 其也是一种Tree结构
+
+5、node节点中的nodeType属性有以下取值
+ 元素节点的nodeType属性为1
+ 属性节点的nodeType属性为2
+ 文本节点的nodeType属性为3
