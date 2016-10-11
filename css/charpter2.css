@@ -1,26 +1,30 @@
 body {
-    background: #cccccc;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #333;
+    background-color: #ccc;
+    margin: 1em 10%
 }
 
-p {
-    color: red;
-    background: #888888;
+h1 {
+    color: #333;
+    background-color: transparent
 }
 
-p.test {
-    color: green
+a {
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-#idTest {
-    color: deeppink
+ul {
+    padding: 0;
 }
 
-h2.test {
-    color: deepskyblue;
-}
-
-gallerypic {
-    background: darkgray;
+li {
+    float: left;
+    pad: 1em;
+    list-style: none;
 }
 
 img {

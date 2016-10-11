@@ -85,3 +85,11 @@ Tree可以表示为Element的形式，每个Element包括文本节点和属性�
     2、innerHTML  优点和缺点:操作简单，相比document.write值得推介 但是不支持 application/xhtml+xml 同时作为微软的专利存在。
     3、DOM提供的方法: 
         createElement():创建一个新的元素 -> 把这个新元素插入到节点树  
+
+第五章:
+    1、生成缩略词语表
+    2、生成文献来源链接
+    3、生成快速访问键清单
+ 参考chapter4/explanation.html
+
+第六章：CSS-DOM
