@@ -3,7 +3,7 @@ body {
 }
 
 p {
-    color: red;
+    color: black;
     background: #888888;
 }
 
@@ -21,9 +21,4 @@ h2.test {
 
 gallerypic {
     background: darkgray;
-}
-
-img {
-    width: 500px;
-    width: 300px;
 }

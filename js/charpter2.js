@@ -36,6 +36,31 @@ function prepareGallery() {
     }
 }
 
+function preparePlaceHolder() {
+    if (!document.createElement) return false;
+    if (!document.createTextNode) return false
+    if (!document.getElementById) return false;
+    if (!document.getElementById('imagegallery')) return false;
+
+    var placeholder = document.createElement('img');
+    placeholder.setAttribute('id', 'placeholder');
+    placeholder.setAttribute('src', '../images/zhang1.jpg')
+    placeholder.setAttribute('alt', 'my imae gallery');
+
+    var description = document.createElement('p');
+    description.setAttribute('id', 'description')
+    var descText = document.createTextNode('Choose an image');
+    description.appendChild(descText);
+
+    // document.body.appendChild(placeholder);
+    // document.body.appendChild(description);
+    var gallery = document.getElementById('imagegallery');
+    insertAfter(placeholder, gallery);
+    insertAfter(placeholder, gallery);
+    //gallery.parentNode.insertBefore(placeholder, gallery);
+    //gallery.parentNode.insertBefore(description, gallery);
+}
+
 function addLoadEvent(func) {
     var oldonload = window.onload;
     if (typeof window.onload != 'function') {
@@ -48,4 +73,14 @@ function addLoadEvent(func) {
     }
 }
 
+function insertAfter(newElement, targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+        parent.appendChild(newElement);
+    } else {
+        parent.insertBefore(newElement, targetElement.nextSibling);
+    }
+}
+
 addLoadEvent(prepareGallery);
+addLoadEvent(preparePlaceHolder);

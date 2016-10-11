@@ -2,55 +2,55 @@
 Just note about learn Js
 
 Charpter1：
-1、data type：
-    a、string
-    b、number
-    c、boolean
-2、Array
-var arr = new Array();
-var arr = new Array('1','2');
-var arr = Array('1','2');
+    1、data type：
+        a、string
+        b、number
+        c、boolean
+    2、Array
+        var arr = new Array();
+        var arr = new Array('1','2');
+        var arr = Array('1','2');
 
-related Array
-var son = Array();
-son['name'] = 'xinyang';
-son['age'] = 1;
-son['lover'] = true;
-var baby = Array();
-baby['my'] = son;
+        related Array
+        var son = Array();
+        son['name'] = 'xinyang';
+        son['age'] = 1;
+        son['lover'] = true;
+        var baby = Array();
+        baby['my'] = son;
 
-3、Operation
-Arithmetic operation
-    + - * / += -= *= /= =
+    3、Operation
+        Arithmetic operation
+            + - * / += -= *= /= =
 
-4、Condition Statement
-if(condition){
-    statement
-}
-compare operater
-> < >= <= != == 
-Arithmetic operater
-&& || 
+    4、Condition Statement
+        if(condition){
+            statement
+        }
+        compare operater
+        > < >= <= != == 
+        Arithmetic operater
+        && || 
 
-5、circle statement
-while(condition){}   do……while()  for() 
+    5、circle statement
+        while(condition){}   do……while()  for() 
 
-6、function
-a、organize statement to perform some function.eg：
-function convertToCelsius(temp){
-    var result = temp - 32;
-    result = result / 1.8;
-    return result;
-}
-b、 variable scope
-global variable:useful in file
-local variable：just useful in function(must decorated by var)
+    6、function
+        a、organize statement to perform some function.eg：
+        function convertToCelsius(temp){
+            var result = temp - 32;
+            result = result / 1.8;
+            return result;
+        }
+        b、 variable scope
+        global variable:useful in file
+        local variable：just useful in function(must decorated by var)
 
-7、Object
-Object is including property and method
+    7、Object
+        Object is including property and method
 
-native Object
-Array|Date|Document|Window……
+        native Object
+        Array|Date|Document|Window……
 
 Charpter2:DOM
 四个非常实用的DOM 方法:getElementById getElementsByTagName getAttribute 和 setAttribute
@@ -79,3 +79,9 @@ Tree可以表示为Element的形式，每个Element包括文本节点和属性�
         将HTML中的obclick等方法使用JS进行绑定
     3、向后兼容:兼容老版本
         浏览器嗅探技术:
+
+第四章:Dynamic HTML
+    1、document.write()   需要避免使用
+    2、innerHTML  优点和缺点:操作简单，相比document.write值得推介 但是不支持 application/xhtml+xml 同时作为微软的专利存在。
+    3、DOM提供的方法: 
+        createElement():创建一个新的元素 -> 把这个新元素插入到节点树  
