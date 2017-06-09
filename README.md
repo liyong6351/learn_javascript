@@ -1,6 +1,7 @@
 # learn_javascript
 Just note about learn Js
 
+
 Charpter1：
     1、data type：
         a、string
